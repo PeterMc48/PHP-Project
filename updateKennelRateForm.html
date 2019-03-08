@@ -1,0 +1,56 @@
+<html>
+  <head>
+  <title>Update Kennels</title>
+  <style>
+        body{
+            padding:0;
+            margin:0;
+        
+        }
+        #banner{
+            width: 100%;
+            height: 200px;
+        }
+        nav {
+            width: 100%;
+            margin: 0;
+            background-color: darkgrey;
+            padding:10px;
+        }
+        ul{
+            text-align: center;
+        }
+        li{
+            display: inline;
+            font-size: 1.5em;
+            margin:50px;
+        }
+        a{
+            text-decoration: none;
+            color:black;
+        }
+        form{
+            margin:30px;
+        }
+        
+    </style>
+  </head>
+  <body>
+       <nav>
+            <ul>
+                <li><a href ="index.html">Home</a></li>
+                <li><a href ="selectKennels.php">Kennels</a></li>
+                <li><a href ="updateKenelRateForm.html">Up Date Kennls</a></li>
+                <li><a href="RemoveBookingform.html">Remove Booking</a></li>
+              
+            </ul>
+       </nav>
+           
+  <form action="update.php" method="post"> 
+        kennel type(sm,m,l,xlg): <input type="text" name="kennel_type"><br>               
+        Update kennel rate: <input type="text" name="kennel_rate" ><br>
+        <input type="submit" name="submitdetails" value="Update" >
+     </form>
+
+  </body>
+</html>
